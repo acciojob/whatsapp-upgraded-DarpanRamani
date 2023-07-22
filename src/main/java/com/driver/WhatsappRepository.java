@@ -1,12 +1,11 @@
 package com.driver;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
-@Repository
-class WhatsappRepository {
-
+public class WhatsappRepository {
     //Assume that each user belongs to at most one group
     //You can use the below mentioned hashmaps or delete these and create your own.
     private HashMap<Group, List<User>> groupUserMap;
@@ -89,6 +88,5 @@ class WhatsappRepository {
 
         return false;
     }
-
 
 }
